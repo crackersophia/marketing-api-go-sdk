@@ -11,7 +11,7 @@ package model
 
 // 拉取创意结构
 type AdCreativeGetSpec struct {
-	AdcreativeId       *int64                          `json:"adcreative_id,omitempty"`
+	AdcreativeId       *int64                          `json:"adcreative_id,string,omitempty"`
 	AdcreativeName     *string                         `json:"adcreative_name,omitempty"`
 	AdcreativeElements *DpAdcreativeCreativeElementsMp `json:"adcreative_elements,omitempty"`
 	PageType           DestinationType                 `json:"page_type,omitempty"`

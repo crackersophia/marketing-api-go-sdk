@@ -11,7 +11,7 @@ package model
 
 // 广告结构
 type AdgroupGetSpec struct {
-	AdgroupId         *int64                   `json:"adgroup_id,omitempty"`
+	AdgroupId         *int64                   `json:"adgroup_id,string,omitempty"`
 	ConfiguredStatus  AdStatus                 `json:"configured_status,omitempty"`
 	AdgroupName       *string                  `json:"adgroup_name,omitempty"`
 	BeginDate         *string                  `json:"begin_date,omitempty"`
